@@ -1,0 +1,9 @@
+.hp_title,
+.hp_author,
+.hp_content {
+	margin: 20px 0;
+}
+
+.hp_author {
+	color: #ccc;
+}

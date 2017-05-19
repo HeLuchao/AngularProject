@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.movieDetailBox {
+				background: #eee;
+				padding: 20px;
+			}
+			
+			.img {
+				width: 100%;
+			}
+			
+			.title,
+			.info,
+			.officialstory,
+			.introduction {
+				text-align: center;
+				color: #aaa;
+			}
+			
+			.title {
+				color: #000;
+				margin: 20px 0;
+			}
+			
+			.introduction {
+				margin-top: 20px;
+				margin-bottom: 10px;
+			}
+			.moviePlay video{
+				width: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="movieDetailBox">
+			<img class="img" src="{{imgPreFix}}{{item.poster
+}}" alt="" />
+			<div class="moviePlay">
+				<video src="{{item.media_url}}" controls="controls"></video>
+			</div>
+			<h2 class="title">{{item.title}}</h2>
+			<p class="info">{{item.info}}</p>
+			<p class="introduction">-剧情简介-</p>
+			<p class="officialstory">{{item.officialstory}}</p>
+		</div>
+	</body>
+
+</html>

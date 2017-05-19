@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<div class="commonBox">
+			<div class="mainInfo">
+				<ul>
+					<li ng-repeat="item in items track by $index">
+						<a href="#/movieDetail/0">
+							<table-view-cell item="item" img-pre-fix='imgPreFix'></table-view-cell>
+							<!--<h2 class="title">{{item.title}}</h2>
+							<p class="author">作者：{{item.author.user_name}}</p>
+							<img class="img_url" src="{{imgPreFix}}{{item.img_url}}" alt="" />
+							<p class="forward">{{item.forward}}</p>
+							<p class="post_date">发表：{{item.post_date}}</p>
+							<p class="like_count">收藏：{{item.like_count}}</p>-->
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

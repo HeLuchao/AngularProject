@@ -1,0 +1,62 @@
+ul,
+li {
+	list-style: none;
+}
+
+.userMainBox {
+	background: #eee;
+}
+
+.userInfo {
+	background: url(images/FvTdPrHd504XhxHdtApqzu3dFfjd.jpg);
+	width: 100%;
+	text-align: center;
+}
+
+.headImg {
+	margin-top: 10%;
+}
+
+.username {
+	color: #fff;
+	margin-bottom: 10%;
+}
+
+.collection {
+	background: #fff;
+	margin: 10px 0;
+	font-size: 18px;
+}
+.collection p{
+	height: 40px;
+	color: #aaa;
+	line-height: 40px;
+	margin-left: 10px;
+}
+
+.collection li,
+.layout li {
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+	border-top: 1px solid #ccc;
+	color: #aaa;
+	padding: 0 10px;
+	cursor: pointer;
+}
+.collection li img,
+.layout li img {
+	vertical-align: middle;
+	width: 35px;
+	height: 35px;
+}
+
+.layout {
+	font-size: 18px;
+	background: #FFFFFF;
+}
+
+.layout li {
+	border-top: none;
+	border-bottom: 1px solid #ccc;
+}

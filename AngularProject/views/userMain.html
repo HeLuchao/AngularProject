@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/userMain.css" />
+	</head>
+	<body>
+		<div class="userMainBox">
+			<div class="userInfo">
+				<img class="headImg" src="img/head.png" alt="" />
+				<p class="username">{{username}}</p>
+			</div>
+			<ul class="collection">
+				<p>收藏</p>
+				<li>
+					<img src="img/center_reading_collection.png" alt="" />
+					<span>阅读</span>
+				</li>
+				<li>
+					<img src="img/center_music_collection.png" alt="" />
+					<span>音乐</span>
+				</li>
+				<li>
+					<img src="img/center_movie_collection.png" alt="" />
+					<span>影视</span>
+				</li>
+			</ul>
+			<ul class="layout">
+				<li ng-click="layoutClick()">
+					<img src="img/aliwx_reply_bar_close_normal.png" alt="" />
+					<span>退出登陆</span>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

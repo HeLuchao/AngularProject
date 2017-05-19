@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/app.css" />
+	</head>
+	<body>
+		<div ng-controller="myCtrl">
+			<div class="header">
+				<div class="headerLeft">
+					<a href="{{navLeftUrl}}">
+						<img src="{{navLeftImg}}" alt="" />
+					</a>
+				</div>
+				<div class="headerCenter">
+					{{navTitle}}
+				</div>
+				<div class="headerRight">
+					<a href="{{navRightUrl}}">.
+						<img src="img/individual_center.png" alt="" />
+					</a>
+				</div>
+			</div>
+			<div class="wrap">
+				<ng-view></ng-view>
+			</div>
+			<div class="footer">
+				<ul>
+					<li ng-click="footerClick($index)" ng-repeat="item in aryHref track by $index">
+						<a href="{{aryHref[$index]}}">
+							<img src="{{aryFlag[$index]?aryImgActive[$index]:aryImg[$index]}}" alt="" />
+							<span ng-style="aryFlag[$index]?{color:'#000'}:{color: '#ccc'}">{{aryDes[$index]}}</span>
+						</a>
+					</li>
+					
+					<!--<li>
+						<a href="#/main/1">
+							<img src="img/main.png" alt="" />
+							<span>首页</span>
+						</a>
+						
+					</li>
+					<li>
+						<a href="#/readList/1">
+							<img src="img/read.png" alt="" />
+							<span>阅读</span>
+						</a>
+						
+					</li>
+					<li>
+						<a href="#/musicList/1">
+							<img src="img/music.png" alt="" />
+							<span>音乐</span>
+						</a>
+						
+					</li>
+					<li>
+						<a href="#/movieList/1">
+							<img src="img/movie.png" alt="" />
+							<span>影视</span>
+						</a>
+						
+					</li>-->
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="public/angular.js" type="text/javascript" charset="utf-8"></script>
+	<script src="public/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="interface/interface.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/controller.js" type="text/javascript" charset="utf-8"></script>
+	
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

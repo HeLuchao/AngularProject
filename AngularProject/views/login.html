@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			a{
+				text-decoration: none;
+				color: #ccc;
+			}
+			input{
+				outline: none;
+			}
+			.loginBox{
+				margin-top: 50px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			.userInfo{
+				width: 100%;
+				height: 76px;
+				border: 2px solid #ccc;
+				border-radius: 5px;
+			}
+			.userInfo input{
+				width: 90%;
+				display: block;
+				height: 35px;
+				padding-left: 5%;
+				padding-right: 5%;
+				border: none;
+				font-size: 18px;
+			}
+			.userInfo .top{
+				border-bottom: 2px solid #ccc;
+			}
+			.login{
+				margin-top: 20px;
+				width: 100%;
+				height: 35px;
+				line-height: 35px;
+				background: #eee;
+				text-align: center;
+				border-radius: 5px;
+				color: #aaa;
+				cursor: pointer;
+			}
+			.loginBox .register, .loginBox .forgetPassword{
+				margin-top: 10px;
+			}
+			.loginBox .register{
+				float: left;
+				margin-left: 5px;
+			}
+			.loginBox .forgetPassword{
+				float: right;
+				margin-right: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="loginBox">
+			<div class="userInfo">
+				<input ng-model="username" class="top" type="text" placeholder="请输入账号"/>
+				<input ng-model="password" class="bottom" type="password" placeholder="请输入密码"/>
+			</div>
+			<div ng-click="loginClick()" class="login">登陆</div>
+			<div>
+				<a class="register" href="">免费注册</a>
+				<a class="forgetPassword" href="forgetPassword">忘记密码</a>
+			</div>
+		</div>
+	</body>
+</html>

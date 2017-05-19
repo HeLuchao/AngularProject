@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.detailCommonBox{
+				background: #eee;
+				padding: 20px;
+			}
+			.title, .userInfo, .story_title, .author_list{
+				text-align: center;
+			}
+			.title{
+				margin: 10px 0;
+			}
+			.story_title{
+				margin-top: 20px;
+			}
+			.title, .userInfo, .author_list{
+				color: #ccc;
+			}
+			.author_list{
+				margin: 10px 0;
+			}
+			.musicPlay audio{
+				width: 100%;
+			}
+			.img{
+				width: 100%;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="detailCommonBox">
+			<div class="musicPlay">
+				<audio src="{{item.media_url}}" controls="controls"></audio>
+			</div>
+			<img class="img" src="{{item.cover}}" alt="" />
+			<p class="title">{{item.title}}</p>
+			<p class="userInfo">
+				<span class="author">{{item.author.user_name}}</span> |
+				<span class="album">{{item.album}}</span>
+			</p>
+			<h2 class="story_title">{{item.story_title}}</h2>
+			<p class="author_list">作者：{{item.author_list[0].user_name}}</p>
+			<p class="story" ng-bind-html="item.story"></p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.commonBox {
+	background: #EEEEEE;
+}
+
+.wheelImg {
+	width: 100%;
+	height: 200px;
+}
+
+.wheelImg img {
+	width: 100%;
+	height: 100%;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.title,
+.author,
+.img_url,
+.post_date,
+.like_count {
+	margin: 10px 0;
+}
+
+.img_url {
+	width: 100%;
+}
+
+.author,
+.post_date,
+.like_count,
+.forward {
+	color: #ccc;
+}
+
+.mainInfo ul li {
+	padding: 10px;
+	border: 1px solid lightgray;
+	margin: 10px 0;
+	background: #FFFFFF;
+}
